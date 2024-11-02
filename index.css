@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: none;
+}
+#logo{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+}
+header section p+h2,h4{
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: #31d37f92;
+}
+header{
+    background-image: url(./image1.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header h2{
+    margin-top: 20px;
+}
+header section{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+header section a{
+    font-size: 1.5rem;
+    padding: 12px;
+    text-decoration: none;
+    border: #18c16f solid 3px;
+    margin: 12px;
+    border-radius: 15px;
+    padding: 2px 10px;
+
+}
+header section a:hover{
+    background-color: #0d6c3b;
+    color: #fff;
+}
+header section img{
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    margin: 20px;
+}
+header section img:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+#about-me{
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #186930;
+}
+#about-me h2{
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: #3fca82b0;
+    text-align: center;
+}
+#about-me p{
+    font-size: 1.4rem;
+    color: #000;
+}
+#about-me h1{
+    font-family: cursive;
+    font-size: 2rem;
+    color: #111212f7;
+    text-align: center;
+}
+
+
+/* skills */
+#skills{
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #186930;
+}
+#skills h1{
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: #3fca82b0;
+    text-align: center;
+}
+#skills p{
+    font-size: 1.4rem;
+    color: #000;
+    text-align: center;
+    font-style: italic;
+}
+.skills-list {
+    list-style-type: none;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 #186930;
+  }
+  
+  .icon {
+    font-size: 24px; /* Adjust icon size */
+    margin-right: 10px;
+  }
+  
+  .skill-name {
+    flex: 1;
+    font-size: 16px;
+  }
+  
+  .progress-bar {
+    position: relative;
+    flex: 2;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4caf50; /* Adjust color as needed */
+    border-radius: 4px;
+    transition: width 0.4s ease;
+  }
+  
+  .percentage {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #skills .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  .left-side, .right-side {
+    flex: 1;
+    margin: 10px;
+  }
+.left-side ion-icon,
+.right-side ion-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 18px;
+  color: #059747; /* Customize icon color */
+}
+#skills .container span {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  
+  #skills span strong {
+    font-weight: bold;
+  }
+  
+  #skills span br {
+    margin-bottom: 5px;
+  }
+
+
+  /* services */
+  #services{
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #186930;
+    text-align: center;
+}
+#services h1{
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: #3fca82b0;
+    text-align: center;
+}
+#services span{
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: #0f19a3b0;
+    font-weight: bold;
+}
+#services ul li{
+    list-style-type: none;
+}
+#services p{
+    font-size: 1.4rem;
+    color: #000;
+    text-align: center;
+    font-style: italic;
+}
+#services img{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px 0 #186930;
+}
+#services img:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+/* Projects */
+#projects{
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #186930;
+    text-align: center;
+}
+#projects h1{
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: #3fca82b0;
+    text-align: center;
+}
+#projects p{
+    font-size: 1.4rem;
+    color: #000;
+    text-align: center;
+    font-style: italic;
+}
+#projects img{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px 0 #186930;
+}
+#projects ul li{
+    list-style-type: none;
+}
+#projects img:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+#projects button{
+    font-size: 1.5rem;
+    padding: 12px;
+    text-decoration: none;
+    border: #18c16f solid 3px;
+    margin: 12px;
+    border-radius: 15px;
+    padding: 2px 10px;
+    background-color: #0d6c3b;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* testimonials */
+#testimonials{
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #186930;
+    text-align: center;
+}
+#testimonials h1{
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: #3fca82b0;
+    text-align: center;
+
+}
+#testimonials span{
+    font-size: 1.4rem;
+    color: #000;
+    text-align: center;
+    font-style: italic;
+}
+#testimonials p {
+    font-size: 1.4rem;
+    color: #000;
+    text-align: center;
+    font-style: italic;
+    border-radius: 10px;
+    box-shadow: 2px 10px 10px 5px #186930;
+
+}
+#testimonials img{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px;
+    box-shadow: 0 5px 10px  #186930;
+}
+#testimonials h2{
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: #040505b0;
+    text-align: center;
+    padding: 12px;
+}
+#testimonials hr{
+  border: none;                     
+  height: 1px;             
+  background-color: #ccc; 
+  position: relative;
+  margin: 20px;
+}
+
+
+/* contact */
+
+#contact {
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+}
+#contact .heading-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.heading-contact h3{
+    color: black;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.heading-contact {
+    text-align: center;
+}
+.contact-info{
+    font-size: 1.1rem;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+.contact-info ion-icon{
+    font-size: 1.5rem;
+    color: #059747;
+    margin-right: 12px;
+}
+.contact-info p{
+    font-size: 1.1rem;
+    color: black; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;  
+}
+#contact p{
+    font-size: 1.1rem;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #186930;
+    
+
+}
+#contact label{
+    visibility: hidden;
+}
+#contact input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #186930;
+}
+#contact textarea{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #186930;
+}
+#contact button{
+    font-size: 1.5rem;
+    padding: 12px;
+    text-decoration: none;
+    border: #18c16f solid 3px;
+    margin: 12px;
+    border-radius: 15px;
+    padding: 2px 10px;
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+}
+#contact button:hover{
+    background-color: #18c16f;
+    color: #fff;
+}
+#contact input:focus{
+    border: 5px solid #18c16f;
+}
+#contact textarea:focus{
+    border: 5px solid #18c16f;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+    font-size: 31px;
+}
+.socials li {
+    list-style-type: none;
+}
+.socials:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
