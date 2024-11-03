@@ -9,23 +9,39 @@
 </head>
 <body>
   <header>
-    <div id="logo">PORTFOLIO</div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <section>
-      <p> <h2>Hello, Iam Kevin Kinyanjui.</h2> <br>
-        <img src="./imagesmine.jpg" alt="personal image">
-        <h4>FrontEnd Web Developer, Developer, Student Developer, Web Developer, Web Designer,  Programmer, Computer Science Student, Junior Developer, Frontend Engineer</h4></p> <br>
-      <a href="#resume">Get Resume</a>
+    <div id="logo">
+      <h4>PORTFOLIO</h4>
+      <button class="menu-btn"><ion-icon name="menu-outline"></ion-icon></button>
       
+      <!-- Mobile Navigation -->
+      <nav class="mobile-nav">
+        <button class="close-btn"><ion-icon name="close-outline"></ion-icon></button>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+        
+    <section class="main-content">
+      <p> <h2>Hello, Iam Kevin Kinyanjui.</h2> <br>
+        <div class="content-wrapper">
+          <img src="./imagesmine.jpg" alt="personal image">
+        <h4>FrontEnd Web Developer, Developer, Student Developer, Web Developer, Web Designer,  Programmer, Computer Science Student, Junior Developer, Frontend Engineer</h4></p> <br>
+        </div>
+      <a href="#resume">Get Resume</a>
     </section>
   </header>
     <main>
@@ -191,18 +207,20 @@
         <section id="testimonials">
           <h1>Testimonials</h1>
           <span>Here is what some of my clients have to say:</span>
-          <div class="testimonial">
-            <img src="./test1.jpg" alt="image of person">
-            <p>Kevin is a talented web developer who is always willing to go the extra mile to get the job done. He is a great team player and always delivers high-quality work. I would highly recommend him to anyone looking for a skilled developer.</p>
-            <h2>Jane Doe</h2>
-            <h3>CEO, Company Name</h3>
-          </div>
-          <hr>
-          <div class="testimonial">
-            <img src="./test2.jpg" alt="image of person 2">
-            <p>Kevin is a talented web developer who is always willing to go the extra mile to get the job done. He is a great team player and always delivers high-quality work. I would highly recommend him to anyone looking for a skilled developer.</p>
-            <h2>Jane Doe</h2>
-            <h3>CEO, Company Name</h3>
+          <div  class="testimonials">
+
+            <div class="testimonial">
+              <img src="./test1.jpg" alt="image of person">
+              <p>Kevin is a talented web developer who is always willing to go the extra mile to get the job done. He is a great team player and always delivers high-quality work. I would highly recommend him to anyone looking for a skilled developer.</p>
+              <h2>Jane Doe</h2>
+              <h3>CEO, Company Name</h3>
+            </div>
+            <div class="testimonial">
+              <img src="./test2.jpg" alt="image of person 2">
+              <p>Kevin is a talented web developer who is always willing to go the extra mile to get the job done. He is a great team player and always delivers high-quality work. I would highly recommend him to anyone looking for a skilled developer.</p>
+              <h2>Jane Doe</h2>
+              <h3>CEO, Company Name</h3>
+            </div>
           </div>
         </section>
 
@@ -263,31 +281,21 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.querySelector(".menu-btn");
+  const closeBtn = document.querySelector(".close-btn");
+  const mobileNav = document.querySelector(".mobile-nav");
+
+  menuBtn.addEventListener("click", () => {
+    mobileNav.classList.add("active");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    mobileNav.classList.remove("active");
+  });
+});
+
+    </script>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>               vw vh
